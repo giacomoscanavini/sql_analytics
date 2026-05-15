@@ -1,5 +1,5 @@
 /*
-Script with basic Structured Query Language (SQL) queries data manipulation functions
+Script with basic Structured Query Language (SQL) queries for data manipulation functions
 Each query may have additional comments to explain its purpose and functionality
 
 Since multiple popular Relational Database Management Systems (RDBMS) may have differetn syntax, 

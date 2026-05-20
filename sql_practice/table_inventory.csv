@@ -1,0 +1,13 @@
+database,table,row_count
+shop.db,customers,18
+shop.db,products,18
+shop.db,orders,26
+shop.db,order_items,40
+hr.db,departments,8
+hr.db,employees,22
+hr.db,projects,10
+hr.db,employee_projects,26
+streaming.db,users,12
+streaming.db,artists,10
+streaming.db,tracks,16
+streaming.db,plays,34

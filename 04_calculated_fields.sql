@@ -1,26 +1,9 @@
 /* CALCULATED FIELDS */
-
 /* concatenating fields for strings 
     literally joins the content of the rows in to a new column */
 SELECT CONCAT(firstName, ' ', lastName) AS fullName
 SELECT CONCAT(firstName, '-', lastName) AS fullName
 FROM Employees
-
-/* string manipulation */
-SELECT UPPER(firstName) AS upperName
-SELECT LOWER(firstName) AS lowerName
-FROM Employees
-
-/* remove unwanted spaces with TRIM */
-SELECT LTRIM(firstName) AS cleanFirstName -- remove spaces on the left
-SELECT RTRIM(firstName) AS cleanFirstName -- remove spaces on the right
-SELECT TRIM(firstName) AS cleanFirstName  -- remove any space from right or left
-FROM Employees
-
-
-/* mathematical calculations */
-SELECT voltage, resistance, voltage / resistance AS current
-FROM tableName
 
 /* conditional clauses with CASE WHEN */
 SELECT 

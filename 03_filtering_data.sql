@@ -1,5 +1,15 @@
 /* FILTERING DATA */
-/* Rows can be filtered using WHERE */
+/* Rows can be filtered using WHERE 
+   Operators:
+   - equality: =
+   - disequality: <>
+   - less than: <
+   - more than: >
+   - less or equal to: <= 
+   - more of equal to: >=
+   - No value: IS NULL
+   - range: BETWEEN 
+*/
 
 /* matching content of a column */
 SELECT * 
@@ -29,18 +39,16 @@ WHERE city_population IS NOT NULL
 SELECT *
 FROM Employees
 WHERE department IN ('Sales', 'Marketing', 'Finance')
-
 /* this is equivalent to 
     WHERE department = 'Sales'
         OR department = 'Marketing'
         OR department = 'Finance'; */
-
 SELECT *
 FROM Employees
 WHERE department NOT IN ('Sales', 'Marketing', 'Finance')
 
 
-/* filtering using wildcards for row string content */
+/* filtering using WILDCARDS for row string content */
 SELECT * 
 FROM Employees 
 WHERE firstName LIKE 'A%'          -- Starts with A

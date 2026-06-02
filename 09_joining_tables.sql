@@ -40,7 +40,7 @@ FROM Users u
 CROSS JOIN Orders o;
 
 
-/* Multile Tables can be joined at the same time */
+/* Multiple Tables can be joined at the same time */
 SELECT e.firstName, e.lastName, c.startTime, c.endTime, cout.outcomeText
 FROM Employees e
 INNER JOIN Calls c ON c.employee_id = e.id
